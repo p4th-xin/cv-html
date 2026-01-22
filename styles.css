@@ -1,0 +1,199 @@
+
+
+body {
+  font-family: Inter, monospace;
+  color: white;
+  background-color: #20212c;
+}
+
+small {
+  color: #ffc201;
+  font-size: 14px;
+}
+
+
+
+
+.word-color {
+  color: #ffc201;
+}
+
+.value {
+  color: #ffc201;
+}
+
+.year {
+  color: #ffc201;
+  margin-top: 4px;
+}
+
+.personal {
+  color: white;
+}
+
+.title {
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: large;
+  color: white;
+}
+
+
+
+
+.horizontal-line-1 {
+  width: 1500px;
+  margin: 10px auto;
+  height: 2px;
+  background: #666;
+  border-radius: 20px;
+}
+
+.horizontal-line-2 {
+  background: #666;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 48px;
+  height: 2px;
+  width: 400px;
+  border-radius: 20px;
+}
+
+
+
+
+.card {
+  background: #2a2c38;
+  padding: 40px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.personal-card {
+  width: 1450px;
+  margin: 0 auto;
+}
+
+.social-engagement-card {
+  height: 330px;
+}
+
+.reference-card {
+  height: 418px;
+}
+
+
+
+
+.personal-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.profile-pic {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 50px;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 120px 20px auto;
+}
+
+.label,
+.value,
+.colon {
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+
+
+
+.skill-circle {
+  display: flex;
+  gap: 67px;
+}
+
+.skill-name {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-family: Inter, monospace;
+}
+
+.ring {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: relative;
+
+  background: conic-gradient(
+    #ffc201 0% calc(var(--p) * 1%),
+    #333 calc(var(--p) * 1%) 100%
+  );
+}
+
+.ring::before {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border-radius: 50%;
+  background: #2a2c38;
+}
+
+.ring span {
+  position: relative;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.skill-bar {
+  margin-top: 38px;
+}
+
+.bar-skill-name {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 390px;
+}
+
+.bar {
+  position: relative;
+  background: #333;
+  margin-top: 10px;
+  margin-left: -3px;
+  width: 400px;
+  height: 5px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.bar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: var(--p);
+  background: #ffc201;
+  border-radius: inherit;
+}
+
+
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 500px 500px 500px;
+  gap: 24px;
+  justify-content: center;
+}
